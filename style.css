@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+    overflow: hidden;
+}
+
+.screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.8s ease;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+/* Profile Screen */
+h1 { font-size: 3.5rem; margin-bottom: 2rem; }
+
+.profile-card {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 3px solid transparent;
+}
+
+.profile-card:hover .profile-img { border-color: white; }
+.profile-card:hover { transform: scale(1.1); }
+
+/* Main Dashboard */
+.hero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#main-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    max-width: 500px;
+}
+
+.logo-text {
+    font-size: 4rem;
+    color: #E50914;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.meta { margin: 15px 0; font-weight: bold; }
+.match { color: #46d369; margin-right: 15px; }
+.age-rating { border: 1px solid white; padding: 0 5px; margin: 0 10px; }
+
+.buttons { display: flex; gap: 10px; }
+button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.play-btn { background-color: white; color: black; }
+.play-btn:hover { background-color: rgba(255,255,255,0.7); }
+.info-btn { background-color: rgba(109, 109, 110, 0.7); color: white; }
