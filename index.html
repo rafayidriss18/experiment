@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Sherbano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Audio for the song -->
+    <audio id="bg-music" src="song.mp3" loop></audio>
+
+    <!-- Page 1: Who's Watching -->
+    <div id="profile-screen" class="screen">
+        <h1>Who's watching?</h1>
+        <div class="profile-container">
+            <div class="profile-card" onclick="startApp()">
+                <div class="profile-img" style="background-image: url('sherry.jpg');"></div>
+                <p>Sherry</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: Main Dashboard -->
+    <div id="main-screen" class="screen hidden">
+        <div class="hero">
+            <video id="main-video" src="montage.mp4" loop muted playsinline></video>
+            <div class="hero-overlay">
+                <h1 class="logo-text">SHERBANO</h1>
+                <div class="meta">
+                    <span class="match">99% Match</span>
+                    <span>2026</span>
+                    <span class="age-rating">18+</span>
+                    <span>1 Season</span>
+                </div>
+                <p class="description">A special original series dedicated to the one and only Sherry. Happy Birthday!</p>
+                <div class="buttons">
+                    <button class="play-btn" onclick="playVideo()">▶ Play</button>
+                    <button class="info-btn">ⓘ More Info</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
